@@ -14,7 +14,7 @@ def deps do
 end
 ```
 
-## escript
+## Escript
 
 Escripts don't support a `priv` directory. Instead, consider adding something like the following to your config:
 
