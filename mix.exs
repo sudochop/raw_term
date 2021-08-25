@@ -31,7 +31,7 @@ defmodule RawTerm.MixProject do
   defp package do
     [
       files: ~w(
-        c_src/raw_term.c
+        src/raw_term.c
         lib
         priv/.gitkeep
         Makefile
