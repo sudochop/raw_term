@@ -1,5 +1,8 @@
 # RawTerm
 
+[![Hex.pm](https://img.shields.io/hexpm/v/raw_term.svg)](https://hex.pm/packages/raw_term)
+[![Hexdocs.pm](https://img.shields.io/badge/api-hexdocs-brightgreen.svg)](https://hexdocs.pm/raw_term)
+
 NIF for toggling a terminal's [raw mode](https://en.wikipedia.org/wiki/Terminal_mode)
 ## Installation
 
