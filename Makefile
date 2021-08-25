@@ -10,8 +10,8 @@ endif
 all: priv/raw_term.so
 	@:
 
-priv/raw_term.so: c_src/raw_term.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ c_src/raw_term.c
+priv/raw_term.so: src/raw_term.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ src/raw_term.c
 
 clean:
 	rm -rf priv/raw_term.so
