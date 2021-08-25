@@ -10,7 +10,16 @@ defmodule RawTerm.MixProject do
       compilers: [:elixir_make | Mix.compilers()],
       make_clean: ["clean"],
       deps: deps(),
-      package: package()
+      package: package(),
+
+      # Docs
+      name: "RawTerm",
+      source_url: "https://github.com/sudochop/raw_term",
+      homepage_url: "https://github.com/sudochop/raw_term",
+      docs: [
+        main: "RawTerm",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -24,7 +33,8 @@ defmodule RawTerm.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:elixir_make, "~> 0.4", runtime: false}
+      {:elixir_make, "~> 0.4", runtime: false},
+      {:ex_doc, "~> 0.24", only: :dev, runtime: false}
     ]
   end
 
