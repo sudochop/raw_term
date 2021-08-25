@@ -5,17 +5,14 @@ defmodule RawTerm do
 
   @on_load :load_nif
 
-  def load_nif do
-    case :code.priv_dir(:raw_term) do
-      {:error, _} = err ->
-        err
+  # escript support
+  @priv_dir Application.get_env(:raw_term, :priv_dir, :code.priv_dir(:raw_term))
 
-      path ->
-        path
-        |> Path.join("raw_term")
-        |> to_charlist()
-        |> :erlang.load_nif(0)
-    end
+  def load_nif do
+    @priv_dir
+    |> Path.join("raw_term")
+    |> to_charlist()
+    |> :erlang.load_nif(0)
   end
 
   def enable do
