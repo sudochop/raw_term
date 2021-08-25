@@ -41,7 +41,8 @@ defmodule RawTerm.MixProject do
       ),
       maintainers: ["Michael Miller"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/sudochop/raw_term"}
+      links: %{"GitHub" => "https://github.com/sudochop/raw_term"},
+      description: "NIF for toggling a terminal's raw mode"
     ]
   end
 end
