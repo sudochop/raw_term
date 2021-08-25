@@ -23,7 +23,7 @@ Escripts don't support a `priv` directory. Instead, consider adding something li
 config :raw_term, priv_dir: "_build/#{Mix.env()}/lib/raw_term/priv"
 ```
 
-# Example
+## Example
 
 ```elixir
 :ok = RawTerm.enable()
